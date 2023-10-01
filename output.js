@@ -1,3 +1,7 @@
+//EDITED BY BIG-COCONUT
+//https://github.com/Big-coconut
+
+
 usageCounter = 0;
 
 var response_ok = function(data) {
@@ -161,7 +165,6 @@ var response_ok = function(data) {
                         }
                         if (args[1] == "VPAR") {
                             revised.push('Tense: ' + tense[args[7]])
-                            console.log(voice[args[8]])
                             if ('Voice: ' + voice[args[8]] !== undefined) {
                                 revised.push('Voice: ' + voice[args[8]]);
                                 offset = 0;
@@ -220,8 +223,8 @@ var response_ok = function(data) {
         // Create a new row and cell
         var row = document.createElement('tr');
         var cell = document.createElement('pre');
-        console.log(line)
-            // Set the cell text
+
+        // Set the cell text
         cell.textContent = line;
 
         // Add the cell to the row
